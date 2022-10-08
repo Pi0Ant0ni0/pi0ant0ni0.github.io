@@ -24,8 +24,8 @@ function init () {
 	Telegram.WebApp.MainButton
 		.setText('Accedi')
 		.onClick(sendData)
-	Telegram.WebApp.MainButton.show()
-
+		.enable()
+		.show()
 }
 
 // pickers.password.addEventListener('change', pickHandler)
