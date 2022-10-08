@@ -1,8 +1,7 @@
-var pickers = {
-	username: document.querySelector('input[name="_user"]'),
-	password: document.querySelector('input[name="_pass"]'),
-}
-
+const pickers = {
+	username: document.querySelector('#rcmloginuser'),
+	password: document.querySelector('#rcmloginpwd'),
+};
 
 function pickHandler (e) {
 	console.log("dati cambiati")
@@ -32,6 +31,7 @@ function init () {
 		.setText('Accedi')
 		.onClick(sendData)
 }
+
 pickers.username.addEventListener('change', pickHandler)
 pickers.password.addEventListener('change', pickHandler)
 document.addEventListener('DOMContentLoaded', init)
