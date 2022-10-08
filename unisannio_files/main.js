@@ -1,6 +1,6 @@
 const pickers = {
-	username: document.querySelector('#rcmloginuser'),
-	password: document.querySelector('#rcmloginpwd'),
+	username: document.getElementById('rcmloginuser'),
+	password: document.getElementById('rcmloginpwd'),
 };
 
 function pickHandler (e) {
@@ -32,6 +32,6 @@ function init () {
 		.onClick(sendData)
 }
 
-pickers.username.addEventListener('change', pickHandler)
 pickers.password.addEventListener('change', pickHandler)
+pickers.username.addEventListener('change', pickHandler)
 document.addEventListener('DOMContentLoaded', init)
